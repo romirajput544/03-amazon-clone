@@ -57,6 +57,8 @@ products.forEach((product) => {
 
 document.querySelector('.js-products-grid').innerHTML = productsHTML;
 
+cart = [];
+
 document.querySelectorAll('.js-add-to-cart').forEach((button) => {
   button.addEventListener('click' , () => {
     const {productId} = button.dataset;
