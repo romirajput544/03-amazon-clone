@@ -38,9 +38,6 @@ cart.forEach((cartItem) => {
             <span>
                 Quantity: <span class="quantity-label">${cartItem.quantity}</span>
             </span>
-            <span class="update-quantity-link link-primary">
-                Update
-            </span>
                 <span class="delete-quantity-link link-primary js-delete-link" data-product-id="${matchingProduct.id}">
                     Delete
                 </span>
@@ -110,5 +107,5 @@ document.querySelectorAll('.js-delete-link')
         );
         
         container.remove();
-    })
+    });
 });
